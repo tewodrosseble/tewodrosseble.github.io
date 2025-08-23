@@ -953,6 +953,7 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-link {
@@ -972,6 +973,7 @@ body {
 .social-link:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+    background: var(--gradient-secondary);
 }
 
 /* Footer */
