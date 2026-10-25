@@ -3,733 +3,794 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tewodros Seble - AI Engineer & Electrical Engineer</title>
+    <meta name="theme-color" content="#080d18">
+    <meta name="description" content="Tewodros Seble is an Applied Machine Learning Engineer and technology founder specializing in AI systems, LLMs, computer vision, MLOps, embedded systems, and edge deployment.">
+    <meta name="author" content="Tewodros Seble">
+    <meta name="robots" content="index, follow">
+
+    <title>Tewodros Seble | Applied AI Engineer and Technology Founder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">TS</a>
-                <div class="nav-social-icons">
-                    <a href="https://www.linkedin.com/in/tewodrosseble/" target="_blank" class="nav-social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.researchgate.net/profile/Tewodros-Seble-2" target="_blank" class="nav-social-link">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                    <a href="https://github.com/tewodrosseble" target="_blank" class="nav-social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/tewodrosseble" target="_blank" class="nav-social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=IvAXFikAAAAJ" target="_blank" class="nav-social-link">
-                        <i class="fas fa-book-open"></i>
-                    </a>
-                </div>
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div id="three-scene" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Tewodros Seble home">
+                TS<span>.</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#publications" class="nav-link">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#awards" class="nav-link">Awards</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li><a class="nav-link active" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-profile">
-                    <div class="profile-image">
-                        <img src="images/myphoto.png" alt="Tewodros Seble" class="headshot">
-                    </div>
-                    <div class="hero-text">
-                        <h1 class="hero-title">Tewodros Seble</h1>
-                        <h2 class="hero-subtitle">AI Engineer & Electrical Engineer</h2>
-                        <p class="hero-description">
-                            Specializing in machine learning, deep learning, and embedded systems. 
-                            Passionate about applying AI to solve real-world problems.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary">View Projects</a>
-                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="tech-icons">
-                    <i class="fas fa-brain"></i>
-                    <i class="fas fa-microchip"></i>
-                    <i class="fas fa-robot"></i>
-                    <i class="fas fa-code"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+            <a class="nav-cta" href="mailto:tewodrostsh@gmail.com?subject=Professional%20Opportunity">
+                Let's connect <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </nav>
+    </header>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am an Electrical and Computer Engineer with a passion for artificial intelligence, 
-                        robotics, and circuit design. Currently working as a Machine Learning Engineer, 
-                        I focus on developing and deploying AI models for classification, recommendation, and regression tasks.
+    <main id="main">
+        <section class="hero section" id="home">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-layout container">
+                <div class="hero-copy reveal">
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        Applied AI Engineer · Technology Founder
+                    </div>
+
+                    <p class="eyebrow">BUILDING INTELLIGENT SYSTEMS THAT WORK IN THE REAL WORLD</p>
+
+                    <h1>
+                        Tewodros
+                        <span>Seble<span class="name-period">.</span></span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        I build
+                        <span class="typed-text">production-ready AI systems</span>
+                        <span class="typing-caret" aria-hidden="true"></span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I am an Applied Machine Learning Engineer and technology founder working across
+                        machine learning, LLM applications, computer vision, MLOps, and hardware
+                        integration. I turn technical ideas into systems that can be tested, deployed,
+                        maintained, and improved.
                     </p>
-                    <p>
-                        My expertise spans from training deep learning models to designing embedded systems and 
-                        developing firmware. I've successfully implemented ML/DL models on web, Android, and edge devices, 
-                        with a particular focus on computer vision applications.
-                    </p>
-                    <div class="education">
-                        <h3>Education & Certifications</h3>
-                        <div class="education-item">
-                            <h4>B.Sc. in Electrical and Computer Engineering</h4>
-                            <p>Addis Ababa University • Microelectronics Specialization</p>
-                            <p>2019 - 2024</p>
-                        </div>
-                        <div class="certifications">
-                            <h4>Key Certifications</h4>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <div>
-                                    <h5>IBM Machine Learning Specialist - Advanced</h5>
-                                    <p>IBM • 2023</p>
-                                </div>
-                            </div>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <div>
-                                    <h5>Neural Networks and Deep Learning</h5>
-                                    <p>Deep Learning AI • 2023</p>
-                                </div>
-                            </div>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <div>
-                                    <h5>Advanced Recommender Systems</h5>
-                                    <p>EIT Digital • 2023</p>
-                                </div>
-                            </div>
-                            <div class="certification-item">
-                                <i class="fas fa-certificate"></i>
-                                <div>
-                                    <h5>Data Science and Machine Learning</h5>
-                                    <p>Udemy • 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>4+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>30+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Technologies</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>2+</h3>
-                        <p>Publications</p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            Explore my work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a class="button button-secondary" href="mailto:tewodrostsh@gmail.com?subject=Professional%20Opportunity">
+                            Contact me <i class="fa-regular fa-envelope"></i>
+                        </a>
                     </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="social-links" aria-label="Professional profiles">
+                        <a href="https://www.linkedin.com/in/tewodrosseble/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/tewodrosseble" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=IvAXFikAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://x.com/tewodrosseble" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
 
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience (8)</h2>
-            <div class="experience-scroll-container">
-                <button class="nav-arrow nav-left" onclick="scrollExperience('left')">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="experience-scroll">
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Data Science Researcher</h3>
-                            <h4>Turing</h4>
-                            <p class="experience-date">Apr 2025 - Present</p>
-                            <p class="experience-location">Remote , United States</p>
-                        </div>
-                        <ul>
-                            <li>Researching on Data Science and Machine Learning methods.</li>
-                            <li>Prepare documentations and reports on research findings.</li>
-                            <li>Researching on model improvement and optimization techniques</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Machine Learning Engineer</h3>
-                            <h4>Purposeify</h4>
-                            <p class="experience-date">Nov 2023 - Present</p>
-                            <p class="experience-location">LA, USA (Remote)</p>
-                        </div>
-                        <ul>
-                            <li>Develop and implement ML models for classification, recommendation, and regression tasks</li>
-                            <li>Fine-tune large language models for specific applications</li>
-                            <li>Research and apply methodologies to optimize AI algorithm performance</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Hardware Engineer</h3>
-                            <h4>Addis-Tech Group</h4>
-                            <p class="experience-date">Sep 2023 - Feb 2024</p>
-                            <p class="experience-location">Addis Ababa, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Designed and tested schematic and PCB layouts for electronic circuits</li>
-                            <li>Developed firmware using C, C++, VHDL, Arduino, and Python</li>
-                            <li>Assembled and programmed microcontrollers and microprocessors</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Project Team Leader</h3>
-                            <h4>Ethiopian Health Professional Students Association</h4>
-                            <p class="experience-date">Jun 2023 - Nov 2023</p>
-                            <p class="experience-location">Addis Ababa, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Led E-learning project team for Health professionals learning platform</li>
-                            <li>Assigned tasks for team members and provided topic elaboration</li>
-                            <li>Tested and deployed deliverables from team members</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Programming Trainer</h3>
-                            <h4>School of Marvel International</h4>
-                            <p class="experience-date">Jul 2022 - Sep 2022</p>
-                            <p class="experience-location">Asella, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Prepared modules for introduction to programming with Python for high school students</li>
-                            <li>Provided practical lessons on operations, functions, objects, classes and other basic programming concepts</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Embedded Systems Developer</h3>
-                            <h4>Nile-Tech Engineering PLC</h4>
-                            <p class="experience-date">Feb 2022 - May 2022</p>
-                            <p class="experience-location">Addis Ababa, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Developed attendance management system using barcode and fingerprint</li>
-                            <li>Built temperature-controlled fan system and smart home monitoring</li>
-                            <li>Worked on embedded systems development and IoT projects</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Robotics Trainer</h3>
-                            <h4>Asella STEM Center</h4>
-                            <p class="experience-date">Jan 2021 - Mar 2021</p>
-                            <p class="experience-location">Asella, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Established STEM center to train robotics and programming for students and university graduates</li>
-                            <li>Successfully provided robotics training for three months</li>
-                            <li>Training published on Tikivah magazine</li>
-                        </ul>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-header">
-                            <h3>Systems Developer</h3>
-                            <h4>School of Marvel International</h4>
-                            <p class="experience-date">Jun 2020 - Oct 2020</p>
-                            <p class="experience-location">Asella, Ethiopia</p>
-                        </div>
-                        <ul>
-                            <li>Developed Student Management System and Online Learning Platform using Django</li>
-                            <li>Built payroll management software for teachers and administrative workers</li>
-                            <li>Created attendance tracking system using Raspberry Pi and fingerprint technology</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                <button class="nav-arrow nav-right" onclick="scrollExperience('right')">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="scroll-indicator">
-                    <span>← Scroll to see more experience →</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects (10)</h2>
-            <div class="projects-scroll-container">
-                <button class="nav-arrow nav-left" onclick="scrollProjects('left')">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="projects-scroll">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/coffee.png" alt="Coffee Plant Monitoring" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Coffee Plant Monitoring System</h3>
-                            <p>ML/DL models deployed on web, Android, and edge devices for coffee ripeness classification and disease identification.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>Django</span>
-                                <span>Raspberry Pi</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="#" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/license.png" alt="License Plate Recognition" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>License Plate Recognition</h3>
-                            <p>Signal processing project using FFT, band-pass filtering, and OCR for car license plate recognition.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>OpenCV</span>
-                                <span>Signal Processing</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://github.com/tewodrosseble/Car-license-plate-recognition" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/tomato.png" alt="Tomato Disease Classification" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Tomato Disease Classification</h3>
-                            <p>Deep learning model for identifying tomato leaf diseases with Django web application.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>CNN</span>
-                                <span>Django</span>
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://github.com/tewodrosseble/tomato-disease-classification-using-CNN-and-Django" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/homeautomation.jpg" alt="Home Automation System" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Home Automation System</h3>
-                            <p>Arduino-based home automation with Java GUI for controlling lights, doors, and security systems.</p>
-                            <div class="project-tags">
-                                <span>Java</span>
-                                <span>Arduino</span>
-                                <span>C++</span>
-                                <span>Embedded Systems</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://github.com/tewodrosseble/Home-Automation-With-Java-And-Arduino" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/votingsystem.png" alt="Electronic Voting Machine" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Electronic Voting Machine</h3>
-                            <p>Digital voting system using ARM7-TDMI Microcontroller with real-time vote counting and winner declaration.</p>
-                            <div class="project-tags">
-                                <span>ARM7</span>
-                                <span>VHDL</span>
-                                <span>IAR EW</span>
-                                <span>Proteus</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://github.com/tewodrosseble/Electronic-Voting-machine-using-ARM7" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/videoconference.png" alt="ClearOpea Video Conferencing" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>ClearOpea Video Conferencing Platform</h3>
-                            <p>Next-generation video conferencing platform with secondary camera setup for enhanced security and seamless online meetings.</p>
-                            <div class="project-tags">
-                                <span>WebRTC</span>
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>Real-time Communication</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://clearopea.riftronix.com/" class="project-link">View Project</a>
-                                <a href="https://clearopea.riftronix.com/" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/career.png" alt="Career Recommender System" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>AI Career Recommender System</h3>
-                            <p>Intelligent career recommendation system for high school students based on personality, interests, and aptitude types, covering 1400+ jobs.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>Machine Learning</span>
-                                <span>Recommendation Engine</span>
-                                <span>Personality Analysis</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="#" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/healthcare.jpg" alt="AI Healthcare Super App" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>AI Powered Healthcare Super App</h3>
-                            <p>Comprehensive healthcare application with AI-powered disease classification, health advisory, nearby health centers, and emergency information system.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>Flutter</span>
-                                <span>Healthcare AI</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="#" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/millimeter.png" alt="Millimeter Wave Radar Breathing" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Millimeter Wave Radar Breathing Rate Estimation</h3>
-                            <p>Advanced breathing rate estimation system using millimeter wave radar technology and ESG data analysis for non-contact health monitoring.</p>
-                            <div class="project-tags">
-                                <span>Radar Technology</span>
-                                <span>Signal Processing</span>
-                                <span>MATLAB</span>
-                                <span>Health Monitoring</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="#" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/callcenter.jpeg" alt="AI Automated Call Center" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>AI Enabled Automated Call Center</h3>
-                            <p>Intelligent call center system with speech recognition and RAG capabilities for marketing agencies to directly call clients without human agents.</p>
-                            <div class="project-tags">
-                                <span>Speech Recognition</span>
-                                <span>RAG</span>
-                                <span>NLP</span>
-                                <span>Automation</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="#" class="project-link">View Code</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/motor-controller.png" alt="Motor Controller PCB Design" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h3>Motor Controller PCB Design</h3>
-                            <p>Schematic and PCB layout for DC motor controller with 220V AC to 12V DC conversion and speed regulation.</p>
-                            <div class="project-tags">
-                                <span>PCB Design</span>
-                                <span>KiCAD</span>
-                                <span>Power Electronics</span>
-                                <span>Motor Control</span>
-                            </div>
-                            <div class="project-buttons">
-                                <a href="https://www.upwork.com/freelancers/~01dacd12391f8fb910" class="project-link">View Project</a>
-                                <a href="#" class="project-link live-link">See Live</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="nav-arrow nav-right" onclick="scrollProjects('right')">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="scroll-indicator">
-                    <span>← Scroll to see more projects →</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2 class="section-title">Research & Publications (3)</h2>
-            <div class="publications-scroll-container">
-                <button class="nav-arrow nav-left" onclick="scrollPublications('left')">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="publications-scroll">
-                    <div class="publication-card">
-                        <div class="publication-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div class="publication-content">
-                            <h3>Deep Learning Powered Equalization with Autoencoders for Improved 5G Communication</h3>
-                            <p class="publication-authors">Second Author</p>
-                            <p class="publication-description">Contributed to machine learning model component focused on autoencoder-based equalization for 5G channels.</p>
-                            <div class="publication-tags">
-                                <span>5G Communication</span>
-                                <span>Autoencoders</span>
-                                <span>Machine Learning</span>
-                            </div>
-                            <a href="https://ieeexplore.ieee.org/document/10984954" class="publication-button" target="_blank">View Publication</a>
-                        </div>
-                    </div>
-                    <div class="publication-card">
-                        <div class="publication-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="publication-content">
-                            <h3>Leveraging AI and LLMs for Personalized Learning Pathways in Multilingual, Low-Resource Classrooms</h3>
-                            <p class="publication-authors">Lead Author</p>
-                            <p class="publication-description">Presented research on educational challenges and opportunities at the "AI in Education" conference.</p>
-                            <div class="publication-tags">
-                                <span>AI in Education</span>
-                                <span>LLMs</span>
-                                <span>Multilingual Learning</span>
-                            </div>
-                            <a href="#" class="publication-button">View Publication</a>
-                        </div>
-                    </div>
-                    <div class="publication-card">
-                        <div class="publication-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <div class="publication-content">
-                            <h3>AI-Enhanced Equalization For Wireless Communication Systems</h3>
-                            <p class="publication-authors">Lead Author</p>
-                            <p class="publication-description">Research on adding extra AI models to enhance equalization of wireless communication systems.</p>
-                            <div class="publication-tags">
-                                <span>Wireless Communication</span>
-                                <span>AI Enhancement</span>
-                                <span>Signal Processing</span>
-                            </div>
-                            <a href="#" class="publication-button">View Publication</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="nav-arrow nav-right" onclick="scrollPublications('right')">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <div class="scroll-indicator">
-                    <span>← Scroll to see more publications →</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>AI & Machine Learning</h3>
-                    <div class="skill-items">
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
-                        <span>Scikit-learn</span>
-                        <span>OpenCV</span>
+                    <div class="hero-keywords">
+                        <span>Applied AI</span>
+                        <span>LLM Engineering</span>
                         <span>Computer Vision</span>
-                        <span>Neural Networks</span>
+                        <span>MLOps</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <span>Python</span>
-                        <span>C/C++</span>
-                        <span>Java</span>
-                        <span>MATLAB</span>
-                        <span>VHDL</span>
+
+                <div class="hero-visual reveal">
+                    <div class="portrait-orbit orbit-outer"></div>
+                    <div class="portrait-orbit orbit-inner"></div>
+
+                    <div class="portrait-frame">
+                        <div class="portrait-topline">
+                            <span>ENGINEERING PROFILE</span>
+                            <span class="live-indicator"></span>
+                        </div>
+
+                        <img
+                            src="images/myphoto.png"
+                            alt="Portrait of Tewodros Seble"
+                            class="profile-photo"
+                            fetchpriority="high"
+                            onerror="this.classList.add('image-missing'); this.alt='Profile photo could not be loaded. Check images/myphoto.png';"
+                        >
+
+                        <div class="portrait-caption">
+                            <div>
+                                <strong>Tewodros Seble</strong>
+                                <span>AI · Software · Systems</span>
+                            </div>
+                            <span class="portrait-mark"><i class="fa-solid fa-microchip"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-items">
-                        <span>Django</span>
-                        <span>Node.js</span>
-                        <span>HTML/CSS/JS</span>
-                        <span>Docker</span>
-                        <span>AWS</span>
+
+                    <div class="floating-chip chip-ai">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Applied AI</span>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Hardware & Embedded</h3>
-                    <div class="skill-items">
-                        <span>PCB Design</span>
-                        <span>Arduino</span>
-                        <span>Raspberry Pi</span>
-                        <span>KiCAD</span>
-                        <span>Altium</span>
+
+                    <div class="floating-chip chip-code">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Engineering</span>
+                    </div>
+
+                    <div class="floating-chip chip-edge">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Edge Systems</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="awards" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Awards</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>AfriconAI Best Project Award</h3>
-                    <p>First Place Winner - 2024</p>
-                    <p>Recognized for outstanding AI project at the AfriconAI conference</p>
+            <a class="scroll-cue" href="#about">
+                <span>Discover my work</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <section class="section section-pad" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">ABOUT ME</p>
+                    <h2>From technical ideas<br><span>to working systems.</span></h2>
+                    <p>
+                        My work combines machine learning research, software engineering,
+                        deployment infrastructure, and practical product development.
+                    </p>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>Bright Ethiopia Hackathon</h3>
-                    <p>2nd Place Winner - 2024</p>
-                    <p>AI-powered financial advisor with multilingual support</p>
+
+                <div class="about-layout">
+                    <article class="glass-card about-card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Engineering across the stack</h3>
+                        <p>
+                            I work across the machine learning lifecycle, from data preparation and
+                            model development to API integration, containerization, evaluation,
+                            deployment, and operational improvement.
+                        </p>
+                        <p>
+                            My interests include language models, retrieval augmented generation,
+                            computer vision, model optimization, and reliable AI systems that solve
+                            concrete product problems.
+                        </p>
+                    </article>
+
+                    <article class="glass-card principle-card reveal">
+                        <p class="eyebrow">MY ENGINEERING PRINCIPLE</p>
+                        <div class="principle-symbol"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Build beyond the prototype.</h3>
+                        <p>
+                            A model creates value when it solves a real problem. I focus on the
+                            complete path from experimentation to integration, deployment, and
+                            measurable results. That means engineering for reliability, performance,
+                            maintainability, and the people who depend on the system.
+                        </p>
+                        <div class="principle-footer">
+                            <span>Research</span><i class="fa-solid fa-arrow-right"></i>
+                            <span>Engineering</span><i class="fa-solid fa-arrow-right"></i>
+                            <span>Impact</span>
+                        </div>
+                    </article>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Professional Memberships</h3>
-                    <p>IMAPS, IAENG, Black in AI Society</p>
-                    <p>Active member of leading engineering and AI organizations</p>
+
+                <div class="focus-grid">
+                    <article class="focus-card reveal">
+                        <span class="focus-number">01</span>
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Applied AI</h3>
+                        <p>LLM applications, RAG pipelines, agentic workflows, and model evaluation.</p>
+                    </article>
+
+                    <article class="focus-card reveal">
+                        <span class="focus-number">02</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Computer Vision</h3>
+                        <p>Image processing, model optimization, inference pipelines, and edge vision.</p>
+                    </article>
+
+                    <article class="focus-card reveal">
+                        <span class="focus-number">03</span>
+                        <i class="fa-solid fa-infinity"></i>
+                        <h3>MLOps</h3>
+                        <p>Testing, experiment tracking, deployment automation, and reliable APIs.</p>
+                    </article>
+
+                    <article class="focus-card reveal">
+                        <span class="focus-number">04</span>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Systems Integration</h3>
+                        <p>Software, embedded platforms, hardware interfaces, and connected products.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>tewodrostsh@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+251-9-4050-4171</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Addis Ababa, Ethiopia</p>
-                        </div>
-                    </div>
+        <section class="section section-pad section-alt" id="experience">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+                    <h2>Experience built through<br><span>engineering and delivery.</span></h2>
+                    <p>
+                        Machine learning, data science, and software development across remote
+                        teams and engineering environments.
+                    </p>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/tewodrosseble/" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.researchgate.net/profile/Tewodros-Seble-2" class="social-link">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                    <a href="https://github.com/tewodrosseble" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/tewodrosseble" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=IvAXFikAAAAJ" class="social-link">
-                        <i class="fas fa-book-open"></i>
-                    </a>
-                    <a href="https://sites.google.com/aait.edu.et/tewodros" class="social-link">
-                        <i class="fas fa-globe"></i>
-                    </a>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Aug 2025 to Present</span>
+                                <span class="timeline-type">Remote</span>
+                            </div>
+                            <h3>Machine Learning Consultant</h3>
+                            <h4>WEIR AI P.B.C</h4>
+                            <p class="timeline-location">Menlo Park, California, USA</p>
+                            <ul>
+                                <li>Engineered AI pipelines for digital identity verification using PyTorch and Docker.</li>
+                                <li>Optimized domain-specific LLM fine-tuning workflows, improving output relevance and prompt alignment by 67% against baseline metrics.</li>
+                                <li>Deployed privacy-aware entity matching models through FastAPI and collaborated with cross-functional engineering teams.</li>
+                            </ul>
+                            <div class="tag-list"><span>PyTorch</span><span>LLMs</span><span>Docker</span><span>FastAPI</span></div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Dec 2024 to Aug 2025</span>
+                                <span class="timeline-type">Remote</span>
+                            </div>
+                            <h3>Machine Learning Engineer</h3>
+                            <h4>Turing</h4>
+                            <p class="timeline-location">Palo Alto, California, USA</p>
+                            <ul>
+                                <li>Designed and deployed generative AI and multimodal machine learning solutions.</li>
+                                <li>Reduced model training time by 40% through algorithm optimization, hyperparameter tuning, and efficient data processing.</li>
+                                <li>Implemented unit testing and validation frameworks to improve reliability and reduce deployment errors.</li>
+                            </ul>
+                            <div class="tag-list"><span>Machine Learning</span><span>Generative AI</span><span>Testing</span><span>Optimization</span></div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Jan 2024 to Dec 2024</span>
+                                <span class="timeline-type">Remote</span>
+                            </div>
+                            <h3>Data Scientist</h3>
+                            <h4>Purposeify, formerly iWork Technologies</h4>
+                            <p class="timeline-location">Los Angeles, USA</p>
+                            <ul>
+                                <li>Built machine learning solutions for classification and recommendation tasks.</li>
+                                <li>Improved model accuracy by 12% through feature selection and automated preprocessing.</li>
+                                <li>Translated research concepts into production-ready AI product capabilities.</li>
+                            </ul>
+                            <div class="tag-list"><span>Python</span><span>Data Science</span><span>Machine Learning</span><span>APIs</span></div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Jan 2024 to May 2024</span>
+                                <span class="timeline-type">Remote</span>
+                            </div>
+                            <h3>Data Scientist</h3>
+                            <h4>Amp Agency</h4>
+                            <p class="timeline-location">New York, USA</p>
+                            <ul>
+                                <li>Developed marketing intelligence tools and fine-tuned NLP models to automate customer support workflows.</li>
+                                <li>Contributed to speech-to-text functionality and containerized backend services for consistent deployment.</li>
+                            </ul>
+                            <div class="tag-list"><span>NLP</span><span>Speech to Text</span><span>Docker</span></div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Nov 2023 to Jan 2024</span>
+                                <span class="timeline-type">Remote</span>
+                            </div>
+                            <h3>Machine Learning Engineer</h3>
+                            <h4>iWork Technologies</h4>
+                            <p class="timeline-location">Los Angeles, USA</p>
+                            <ul>
+                                <li>Built and optimized machine learning models for classification and regression tasks.</li>
+                                <li>Developed documented Python code and followed version control practices to support iterative delivery.</li>
+                            </ul>
+                            <div class="tag-list"><span>Python</span><span>Regression</span><span>Classification</span><span>Git</span></div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-top">
+                                <span class="timeline-date">Feb 2022 to Oct 2023</span>
+                                <span class="timeline-type">Full time</span>
+                            </div>
+                            <h3>AI Developer</h3>
+                            <h4>Nile-Tech Engineering PLC</h4>
+                            <p class="timeline-location">Addis Ababa, Ethiopia</p>
+                            <ul>
+                                <li>Designed backend systems using Django and Flask for AI-powered applications.</li>
+                                <li>Contributed to model architecture, data ingestion pipelines, and end-to-end AI development.</li>
+                            </ul>
+                            <div class="tag-list"><span>Django</span><span>Flask</span><span>Python</span><span>REST APIs</span></div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Tewodros Seble. All rights reserved.</p>
+        <section class="section section-pad" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">SELECTED PROJECTS</p>
+                    <h2>Engineering ideas into<br><span>practical solutions.</span></h2>
+                    <p>
+                        Selected AI, machine learning, infrastructure, and product engineering work.
+                        Open a project link to explore the implementation where available.
+                    </p>
+                </div>
+
+                <div class="project-filters reveal" role="group" aria-label="Filter projects">
+                    <button class="filter-button active" type="button" data-filter="all">All projects</button>
+                    <button class="filter-button" type="button" data-filter="ai">AI and LLMs</button>
+                    <button class="filter-button" type="button" data-filter="vision">Computer vision</button>
+                    <button class="filter-button" type="button" data-filter="systems">Systems and products</button>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/brandagent.jpg" alt="Autonomous brand sentiment and monitoring system" loading="lazy" data-art="brand">
+                            <span class="project-type">Agentic AI</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Autonomous Brand Sentiment and Monitoring</h3>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <p>Concept and system work for monitoring brand discussions, analyzing sentiment, and supporting faster reputation response across digital channels.</p>
+                            <div class="tag-list"><span>LLM Agents</span><span>NLP</span><span>Social APIs</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/agripredict.png" alt="AgriPredict agricultural market intelligence platform" loading="lazy" data-art="agri">
+                            <span class="project-type">AgriTech</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>AgriPredict</h3>
+                                <a href="https://agripredict.riftronix.com/" target="_blank" rel="noopener noreferrer" aria-label="Open AgriPredict"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <p>A predictive agricultural platform concept focused on market trends, demand signals, pricing decisions, and practical support for agricultural stakeholders.</p>
+                            <div class="tag-list"><span>Predictive Analytics</span><span>AI Agents</span><span>Web Applications</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/meretmind.png" alt="MeretMind agricultural intelligence platform" loading="lazy" data-art="meret">
+                            <span class="project-type">Agricultural Intelligence</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>MeretMind Agricultural Intelligence</h3>
+                                <a href="https://meretmind.agrigebeta.com/" target="_blank" rel="noopener noreferrer" aria-label="Open MeretMind"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <p>A data-driven agricultural intelligence platform connecting geographic, soil, and yield information to support planning and decision-making.</p>
+                            <div class="tag-list"><span>Data Science</span><span>Cloud Architecture</span><span>React</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="vision">
+                        <div class="project-media">
+                            <img src="images/nsfw.png" alt="Edge computer vision content detection and blurring" loading="lazy" data-art="vision">
+                            <span class="project-type">Computer Vision</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Edge NSFW Detection and Blurring</h3>
+                                <a href="https://github.com/tewodrosseble/Edge-NSFW-Detection-Blurring" target="_blank" rel="noopener noreferrer" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <p>Edge inference and content blurring designed to reduce dependence on cloud processing and limit the transfer of sensitive visual data.</p>
+                            <div class="tag-list"><span>TensorRT</span><span>Edge AI</span><span>Python</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="systems">
+                        <div class="project-media">
+                            <img src="images/tensorrt.png" alt="Autonomous TensorRT failure recovery system" loading="lazy" data-art="tensorrt">
+                            <span class="project-type">ML Infrastructure</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Autonomous TensorRT Failure Recovery</h3>
+                                <a href="https://github.com/tewodrosseble/Autonomous-TensorRT-Failure-Recovery" target="_blank" rel="noopener noreferrer" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <p>An ML infrastructure project focused on diagnosing inference failures and automating recovery steps in TensorRT deployment workflows.</p>
+                            <div class="tag-list"><span>C++</span><span>TensorRT</span><span>MLOps</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="vision">
+                        <div class="project-media">
+                            <img src="images/coffee.png" alt="Edge-deployed crop disease vision system" loading="lazy" data-art="crop">
+                            <span class="project-type">Agriculture AI</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Edge Crop Disease Vision System</h3>
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <p>Computer vision designed for local crop disease identification, with an emphasis on quantized models and offline operation on resource-constrained devices.</p>
+                            <div class="tag-list"><span>TensorFlow Lite</span><span>Raspberry Pi</span><span>Computer Vision</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="systems">
+                        <div class="project-media">
+                            <img src="images/millimeter.png" alt="Non-contact vital sign monitoring with radar" loading="lazy" data-art="radar">
+                            <span class="project-type">Embedded Systems</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Non-Contact Vital Sign Monitoring</h3>
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <p>A sensing and signal processing concept combining millimeter-wave radar data with machine learning for contactless respiratory monitoring.</p>
+                            <div class="tag-list"><span>Signal Processing</span><span>Radar</span><span>Machine Learning</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/callcenter.jpeg" alt="RAG-powered voice and call center automation" loading="lazy" data-art="voice">
+                            <span class="project-type">Conversational AI</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>RAG-Powered Call Center Automation</h3>
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <p>A conversational AI architecture combining speech-to-text, language models, and retrieval from company knowledge to support voice-based workflows.</p>
+                            <div class="tag-list"><span>LLMs</span><span>RAG</span><span>Voice AI</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/career.png" alt="AI career and aptitude recommendation engine" loading="lazy" data-art="career">
+                            <span class="project-type">Education Technology</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>AI Career and Aptitude Engine</h3>
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+                            <p>A recommendation system concept matching aptitude and personality signals with career pathways and structured educational guidance.</p>
+                            <div class="tag-list"><span>Recommendation Systems</span><span>Python</span><span>Data Science</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="systems">
+                        <div class="project-media">
+                            <img src="images/license.png" alt="License plate recognition and OCR pipeline" loading="lazy" data-art="ocr">
+                            <span class="project-type">Computer Vision</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>High-Speed License Plate OCR</h3>
+                                <a href="https://github.com/tewodrosseble/Car-license-plate-recognition" target="_blank" rel="noopener noreferrer" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <p>An image processing and OCR pipeline for license plate recognition, including preprocessing for challenging visual conditions.</p>
+                            <div class="tag-list"><span>OpenCV</span><span>OCR</span><span>Python</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="systems">
+                        <div class="project-media">
+                            <img src="images/videoconference.png" alt="Secure WebRTC conferencing platform" loading="lazy" data-art="secure">
+                            <span class="project-type">Secure Communications</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Encrypted WebRTC Conferencing</h3>
+                                <a href="https://clearopea.riftronix.com/" target="_blank" rel="noopener noreferrer" aria-label="Open conferencing platform"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                            <p>A secure real-time communications platform using WebRTC and encrypted peer-to-peer media connections.</p>
+                            <div class="tag-list"><span>WebRTC</span><span>React</span><span>Node.js</span></div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-category="ai">
+                        <div class="project-media">
+                            <img src="images/resume.jpg" alt="Natural language processing resume parser" loading="lazy" data-art="resume">
+                            <span class="project-type">NLP</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-heading-row">
+                                <h3>Intelligent Resume Parser</h3>
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <p>A natural language processing workflow for extracting structured skills, education, and experience from unstructured resumes.</p>
+                            <div class="tag-list"><span>Transformers</span><span>FastAPI</span><span>NLP</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-pad section-alt" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">TECHNICAL SKILLS</p>
+                    <h2>The tools behind<br><span>the implementation.</span></h2>
+                    <p>
+                        A practical engineering toolkit spanning machine learning, software delivery,
+                        cloud infrastructure, and deployment.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI and Machine Learning</h3>
+                        <p>Model development, evaluation, and applied AI systems.</p>
+                        <div class="tag-list"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Hugging Face</span><span>LLM Fine-tuning</span><span>RAG</span><span>Agentic AI</span><span>Computer Vision</span><span>NLP</span></div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming and Backend</h3>
+                        <p>Application development, services, APIs, and data processing.</p>
+                        <div class="tag-list"><span>Python</span><span>C/C++</span><span>SQL</span><span>Java</span><span>Bash</span><span>FastAPI</span><span>Django</span><span>Flask</span><span>REST APIs</span></div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>MLOps and Infrastructure</h3>
+                        <p>Reproducible experimentation, deployment, and system monitoring.</p>
+                        <div class="tag-list"><span>Docker</span><span>Kubernetes</span><span>AWS EC2</span><span>AWS SageMaker</span><span>AWS S3</span><span>MLflow</span><span>Weights &amp; Biases</span><span>Triton</span><span>TensorRT</span></div>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h3>Software Quality and Delivery</h3>
+                        <p>Testing, version control, automation, and dependable releases.</p>
+                        <div class="tag-list"><span>Git</span><span>GitHub Actions</span><span>GitLab CI</span><span>PyTest</span><span>Linux</span><span>CI/CD</span><span>Model Validation</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-pad" id="research">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">RESEARCH AND RECOGNITION</p>
+                    <h2>Research with an<br><span>engineering perspective.</span></h2>
+                    <p>
+                        Research contributions, technical recognition, and continued exploration
+                        of machine learning systems.
+                    </p>
+                </div>
+
+                <div class="recognition-grid">
+                    <article class="recognition-card glass-card reveal">
+                        <div class="recognition-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <span class="recognition-label">Research publication</span>
+                        <h3>Deep Learning Powered Equalization with Autoencoders</h3>
+                        <p>Co-authored research exploring the use of deep learning and autoencoder-based methods for equalization.</p>
+                    </article>
+
+                    <article class="recognition-card glass-card reveal">
+                        <div class="recognition-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <span class="recognition-label">Award</span>
+                        <h3>AfriconAI Best Project, First Place</h3>
+                        <p>Recognized for an AI project in 2024. The CV also records a presentation to researchers and government officials.</p>
+                    </article>
+
+                    <article class="recognition-card glass-card reveal">
+                        <div class="recognition-icon"><i class="fa-solid fa-medal"></i></div>
+                        <span class="recognition-label">Product competition</span>
+                        <h3>Bright Ethiopia Product Competition, Second Place</h3>
+                        <p>Product competition recognition recorded in the CV for 2024 to 2025.</p>
+                    </article>
+
+                    <article class="recognition-card glass-card reveal">
+                        <div class="recognition-icon"><i class="fa-solid fa-microscope"></i></div>
+                        <span class="recognition-label">Research interest</span>
+                        <h3>LLMs in Low-Resource Settings</h3>
+                        <p>Research and technical presentation work focused on the challenges and opportunities of language models in low-resource settings.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-pad section-alt" id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">EDUCATION AND CERTIFICATIONS</p>
+                    <h2>Academic foundations<br><span>and continuous learning.</span></h2>
+                    <p>
+                        Formal education and technical credentials listed in my CV.
+                    </p>
+                </div>
+
+                <div class="credentials-layout">
+                    <div class="credentials-column">
+                        <h3 class="subsection-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+                        <article class="credential-card glass-card reveal">
+                            <div class="credential-icon"><i class="fa-solid fa-university"></i></div>
+                            <div>
+                                <span class="credential-date">September 2019 to June 2023</span>
+                                <h4>B.Sc. in Electrical and Computer Engineering</h4>
+                                <p class="credential-provider">Addis Ababa University</p>
+                                <p>Electrical and computer engineering foundation spanning computing and engineering systems.</p>
+                            </div>
+                        </article>
+
+                        <article class="credential-card glass-card reveal">
+                            <div class="credential-icon"><i class="fa-solid fa-book"></i></div>
+                            <div>
+                                <span class="credential-date">September 2022 to February 2024</span>
+                                <h4>Ethics of Artificial Intelligence</h4>
+                                <p class="credential-provider">Connors State College, Oklahoma, United States</p>
+                                <p>AI ethics study recorded in the education section of my CV.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="credentials-column">
+                        <h3 class="subsection-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+
+                        <article class="credential-card glass-card reveal">
+                            <div class="credential-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <span class="credential-date">2023 to 2024</span>
+                                <h4>Neural Networks and Deep Learning</h4>
+                                <p class="credential-provider">DeepLearning.AI</p>
+                                <p>Machine learning foundations and neural network methods.</p>
+                            </div>
+                        </article>
+
+                        <article class="credential-card glass-card reveal">
+                            <div class="credential-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div>
+                                <span class="credential-date">2023 to 2024</span>
+                                <h4>Machine Learning Specialist Advanced</h4>
+                                <p class="credential-provider">IBM</p>
+                                <p>Machine learning specialization listed in my CV.</p>
+                            </div>
+                        </article>
+
+                        <article class="credential-card glass-card reveal">
+                            <div class="credential-icon"><i class="fa-solid fa-ranking-star"></i></div>
+                            <div>
+                                <span class="credential-date">2023 to 2024</span>
+                                <h4>Advanced Recommender Systems</h4>
+                                <p class="credential-provider">EIT Digital</p>
+                                <p>Recommendation systems and personalized information retrieval.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <p class="credential-note">
+                    Certification titles and providers are reproduced from the CV. Add credential verification links or certificate IDs if you want recruiters to verify each credential directly.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-pad" id="contact">
+            <div class="container">
+                <div class="contact-panel reveal">
+                    <div class="contact-orb"></div>
+                    <div class="contact-copy">
+                        <p class="eyebrow">LET'S BUILD SOMETHING USEFUL</p>
+                        <h2>Have a challenging<br><span>engineering problem?</span></h2>
+                        <p>
+                            I welcome conversations about applied AI, machine learning engineering,
+                            model deployment, MLOps, research collaboration, and product development.
+                            If you are building a serious technical product, let's talk.
+                        </p>
+
+                        <div class="contact-actions">
+                            <a class="button button-primary" href="mailto:tewodrostsh@gmail.com?subject=Professional%20Opportunity">
+                                Email me <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a class="button button-secondary" href="https://www.linkedin.com/in/tewodrosseble/" target="_blank" rel="noopener noreferrer">
+                                Connect on LinkedIn <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-details">
+                        <a href="mailto:tewodrostsh@gmail.com">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span><small>Email</small>tewodrostsh@gmail.com</span>
+                        </a>
+                        <a href="tel:+251940504171">
+                            <i class="fa-solid fa-phone"></i>
+                            <span><small>Phone</small>+251 940 504 171</span>
+                        </a>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span><small>Location</small>Addis Ababa, Ethiopia · Open to remote collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <a class="brand footer-brand" href="#home">TS<span>.</span></a>
+            <p>© <span id="current-year"></span> Tewodros Seble. Applied AI, software, and systems engineering.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/tewodrosseble/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/tewodrosseble" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:tewodrostsh@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 </html>
